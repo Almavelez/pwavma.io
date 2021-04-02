@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width,
+       initial-scale=1.0">
+    <title>Control ESP velez</title>
+    <script
+    src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+  <script src="js/init.js">
+  </script>
+  <link href="css/estilos.css"
+    rel="stylesheet">
+  <script type="module"
+    src="cmp/mi-footer.js">
+    </script>
+    <script src="js/regSw.js">
+    </script>
+    <!--
+      Color de la barra de
+      navegación de Chrome en
+      dispositivos móviles.
+    -->
+    <meta name="theme-color"
+      content="#81d4f4">
+    <!--
+      Ícono para la página web.
+      Debe ponerse en la raíz de
+      la página.
+    -->
+    <link rel="icon" sizes="32x32"
+      href="favicon.ico">
+    <!--
+      Configuración de la PWA para
+      Chrome y Edge.
+    -->
+    <link rel="manifest"
+      href="site.webmanifest">
+    <!--
+      Configuración para
+      Web Clip en Safari.
+    -->
+    <meta
+      name="apple-mobile-web-app-title"
+      content="dmppwa">
+    <meta
+      name="apple-mobile-web-app-capable"
+      content="yes">
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="default">
+    <link rel="apple-touch-icon"
+      href="img/icono2048.png">
+    <link rel="apple-touch-icon"
+      sizes="256x256"
+      href="img/icono256.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="1024x1024"
+      href="img/icono1024.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="2048x2048"
+      href="img/icono2048.png">
+
+    <link rel="stylesheet"
+      href="css/estilos.css">
+    <script type="module"
+      src="cmp/mi-nav.js">
+      </script>
+     
+  </head>
+   <body>
+    <script src="js/agent.js">
+    </script>
+    <header>
+      <div class="herramientas">
+        <h1>Control ESP velez</h1>
+       
+          </button>
+        </span>
+      </div>
+    </header>
+
+        <div class="contenido">
+          
+          <p>
+            <a href="dispositivo.html"
+              target="_blank">Ver
+              dispositivo
+              simulado.</a>
+          </p>
+          <p>
+            <a href="historial.html"
+              target="_blank">Ver
+              historial.</a>
+          </p>
+          <p>
+            <label>
+              Dispositivo
+              <output
+                id="ctDispositivo">
+              </output>
+            </label>
+          </p>
+          <p>
+            <label>
+              Entrada
+              <meter id="ctEntrada"
+                min="0" max="10">
+              </meter>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input id=ctSalida
+                type="checkbox">
+              Salida
+            </label>
+          </p>
+          <mi-nav></mi-nav>
+          <mi-footer></mi-footer>
+        </div>
+
+        
+        <script type="module"
+          src="js/CtrlMovil.js">
+          </script>
+  </body>
+</html>
