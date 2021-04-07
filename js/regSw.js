@@ -13,7 +13,7 @@ async function regSw() {
     const registro =
       await navigator.
         serviceWorker.
-        register("/sw.js");
+        register("sw.js");
     console.log("sw registrado.");
     console.log(registro);
   } catch (e) {
