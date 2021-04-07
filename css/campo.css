@@ -1,3 +1,30 @@
+
+input[type=radio],
+input[type=radio]:checked~.off,
+input[type=checkbox],
+input[type=checkbox]:checked~.off {
+  display: none;
+}
+
+input[type=radio]:not(:checked)~.on,
+input[type=checkbox]:not(:checked)~.on {
+  display: none;
+}
+
+.off {
+  vertical-align: middle;
+  color: var(--colCheckFondo);
+  font-size: 48px;
+}
+
+.on {
+  vertical-align: middle;
+  color: var(--colCheckOn);
+  font-size: 48px;
+}
+
+
+
 .campo {
   display: block;
   position: relative;
