@@ -25,14 +25,24 @@ const CACHE = "dmppwa-1.000";
  * línea. */
 const ARCHIVOS = [
   "cmp/mi-nav.js",
+  "cmp/mi-footer.js",
   "css/campo.css",
   "css/estilos.css",
   "css/mi-nav.css",
   "img/icono256.png",
   "img/icono1024.png",
   "img/icono2048.png",
+  "disp/CtrlDispositivo.js",
+  "disp/ProxyEntrada.js",
+  "disp/ProxyHistorial",
+  "disp/ProxiSalida.js",
+  "disp/ResInt.js",
+  "disp/utilIoT.js",
   "js/agent.js",
-  "js/CtrlDivide.js",
+  "js/CtrlHistorial.js",
+  "js/CtrlMovil.js",
+  "js/init.js",
+  "js/tipos.js",
   "js/regSw.js",
   "archivos.html",
   "ayuda.html",
@@ -41,7 +51,12 @@ const ARCHIVOS = [
   "index.html",
   "LICENSE",
   "README.md",
+  "dispositivo.html",
+  "historial.html",
   "site.webmanifest",
+  "lib/fabrica.js",
+  "lib/tiposFire.js",
+  "lib/util.js",
   '/'
 ];
 
