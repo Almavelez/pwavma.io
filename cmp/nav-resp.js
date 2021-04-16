@@ -1,46 +1,24 @@
-class NavResp extends HTMLElement {
-    connectedCallback() {
-      this.innerHTML = /* html */
-        `<ul>
-          <li>
-            <a href="index.html">
-              <span class=
-                  "material-icons">
-                homea
-              </span>
-              Inicio
-            </a>
-          </li>
-          <li>
-            <a href="gps.html">
-              <span class=
-                  "material-icons">
-                location_searching
-              </span>
-              GPS
-            </a>
-          </li>
-          <li>
-            <a href="archivos.html">
-              <span class=
-                  "material-icons">
-                attach_file
-              </span>
-              Archivos
-            </a>
-          </li>
-          <li>
-            <a href="ayuda.html">
-              <span class=
-                  "material-icons">
-                help
-              </span>
-              Ayuda
-            </a>
-          </li>
-         
-              </ul>`;
-    }
-  }
-  customElements.define(
-    "nav-resp", NavResp);
+
+    $(document).ready(main);
+
+var contador = 1;
+
+function main(){
+	$('.menu_bar').click(function(){
+		// $('nav').toggle(); 
+
+		if(contador == 1){
+			$('nav').animate({
+				left: '0'
+			});
+			contador = 0;
+		} else {
+			contador = 1;
+			$('nav').animate({
+				left: '-100%'
+			});
+		}
+
+	});
+
+};
