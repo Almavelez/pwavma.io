@@ -1,54 +1,41 @@
-.respmenu a { 
-    color: inherit;
-    text-decoration: none;
-    display: block;
-    padding: 10px 20px;
-    border-bottom: 2px solid #456789;
-    max-width: 200px;
-    background: #234567;
-    font-variant: small-caps;
-    text-shadow: 1px 1px black;
-  }
+mi-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 
-  .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
-    position: absolute;  
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    right: 0;
-    top: 0;
-    width: 48px;
-    height: 48px;  
-  }
-   
-  .respmenu .fa-bars, .respmenu .fa-times {
-    font-size: 48px;
-    pointer-events: none;
-  }
-   
-  .respmenu input[type="checkbox"] {
-    opacity: 0; 
-  }
-   
-  .respmenu {
-    color: white;
-    position: relative; 
-    background: #123456;
-    min-height: 48px;
-  }
-   
-  .respmenu nav {
-    display: none;
-  }
-   
-  .respmenu input:checked ~ nav {
-    display: block;
-  }
-   
-  .respmenu input:checked ~ .fa-bars {
-    display: none;
-  }
-   
-  .respmenu input:not(:checked) ~ .fa-times {
-    display: none;
-  }
+mi-nav ul {
+  color: var(--colorPrimario);
+  background-color:
+    var(--colorPrimarioFondo);
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+}
+
+mi-nav a {
+  display: block;
+  color: var(--colorPrimario);
+  font-size: 0.75rem;
+  text-decoration: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  text-align: center;
+}
+
+mi-nav a:active {
+  background-color:
+    var(--colorActive);
+}
+
+mi-nav .material-icons {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
