@@ -2,9 +2,8 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-      content="width=device-width,
-       initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
     <title>Control ESP Velez</title>
     <script
     src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
@@ -12,16 +11,22 @@
     src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
   <script src="js/init.js">
   </script>
-     <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
   rel="stylesheet">
-     <script
-    src="cmp/nav-resp.js">
-     </script>
   <link href="css/estilos.css"
     rel="stylesheet">
+
+    <link href="css/fonts.css"
+    rel="stylesheet">
+
+
   <script type="module"
     src="cmp/mi-footer.js">
     </script>
+   <script
+    src="cmp/nav-resp.js">
+     </script>
+        
     <script src="js/regSw.js">
     </script>
     <!--
@@ -76,6 +81,8 @@
     <script type="module"
       src="cmp/mi-nav.js">
       </script>
+      <script src="http://code.jquery.com/jquery-latest.js"></script>
+      <script src="cmp/nav-resp.js"></script>
      
   </head>
    <body>
@@ -84,25 +91,23 @@
     <header>
       <div class="herramientas">
         <h1>Control ESP velez</h1>
-       
-          </button>
-        </span>
+       </div>
+
+      <div class="menu_bar">
+        <a href="#" class="bt-menu"><span class="icon_list2">
+            </span>Menu</a>
       </div>
+        <nav>
+          <ul>
+            <li><a href="dispositivo.html" target="_blank">Ver dispositivo simulado.</a></li>
+            <li><a href="historial.html" target="_blank">Ver historial.</a></li>
+            
+          </ul>
+
+        </nav>
     </header>
 
         <div class="contenido">
-          
-          <p>
-            <a href="dispositivo.html"
-              target="_blank">Ver
-              dispositivo
-              simulado.</a>
-          </p>
-          <p>
-            <a href="historial.html"
-              target="_blank">Ver
-              historial.</a>
-          </p>
           <p>
             <label>
               Dispositivo
@@ -134,5 +139,6 @@
         <script type="module"
           src="js/CtrlMovil.js">
           </script>
+          
   </body>
 </html>
